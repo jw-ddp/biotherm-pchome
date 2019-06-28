@@ -149,7 +149,7 @@ a:focus {
 
 
 .sub-head {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
     font-weight: 400;
     line-height: 1px;
@@ -918,13 +918,20 @@ a:focus {
 
 #gift .item-wrapper .body h1 {
     position: relative;
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
     font-weight: 700;
     text-align: center;
-    line-height: 36px;
+    line-height: 30px;
     color: #000; 
     margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+    #gift .item-wrapper .pro-name {
+        font-size: 24px;
+        line-height: 34px;
+    }
 }
 
 #gift .item-wrapper .body h1::before {
@@ -932,7 +939,7 @@ a:focus {
     content: "";
     width: 100%;
     height: 1px;
-    top: 50px;
+    top: 35px;
     left: 0;
     background-color: #5f5f5f;
 }
@@ -940,11 +947,21 @@ a:focus {
 #gift .item-wrapper .body h1::after {
     position: absolute;
     content: "";
-    top: 50px;
+    top: 35px;
     left: calc(50% - 8px);
     border-width: 8px;
     border-style: dashed dashed solid dashed;
     border-color: #5f5f5f transparent transparent transparent;
+}
+
+@media (min-width: 576px) {
+    #gift .item-wrapper .body h1::before {
+        height: 1px;
+        top: 50px;
+    }
+    #gift .item-wrapper .body h1::after {
+        top: 50px;
+    }
 }
 
 #gift .item-wrapper .pro-name {
@@ -952,23 +969,62 @@ a:focus {
     font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
     font-weight: 400;
     text-align: center;
-    line-height: 25px;
+    line-height: 20px;
     color: #000; 
-    padding: 5px 0;
-    margin: 15px 0;
+    padding: 10px 0;
+}
+
+#gift .item-wrapper .pro-name span {
+    font-size: 30px;
+    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 700;
+    height: 36px;
+    color: #000; 
+    text-transform: uppercase; 
+    display: table;
+    padding: 0 10px;
+    margin: 0 auto;
 }
 
 @media (min-width: 576px) {
-    #gift .item-wrapper .pro-name {
+    #gift .item-wrapper .pro-name span {
         font-size: 20px;
         line-height: 30px;
     }
 }
 
+.title-wrapper span {
+    font-size: 30px;
+    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 700;
+    height: 36px;
+    color: #000; 
+    text-transform: uppercase; 
+    display: table;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+    .title-wrapper span {
+        display: inline-block;
+        font-size: 36px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .title-wrapper span {
+        font-size: 48px;
+        height: 52px;
+    }
+}
+
 #gift .item-wrapper .pro-price {
     position: relative;
-    width: 150px;
-    height: 40px;
+    width: 130px;
+    height: 30px;
     color: #000; 
     margin-left: auto;
     margin-right: auto;
@@ -990,10 +1046,10 @@ a:focus {
 #gift .item-wrapper .pro-price::before {
     position: absolute;
     content: "價值";
-    font-size: 16px;
+    font-size: 15px;
     text-align: left !important;
-    top: 8px;
-    left: 15px;
+    top: 2px;
+    left: 5px;
 }
 
 @media (min-width: 576px) {
@@ -1006,10 +1062,10 @@ a:focus {
 #gift .item-wrapper .pro-price::after {
     position: absolute;
     content: "";
-    top: 2px;
-    right: 2px;
-    width: 85px;
-    height: 32px;
+    top: 1px;
+    right: 1px;
+    width: 80px;
+    height: 24px;
     background-color: #111;
 }
 
@@ -1027,7 +1083,7 @@ a:focus {
 
 #gift .item-wrapper .price {
     position: absolute;
-    top: 8px;
+    top: 2px;
     right: 15px;
     font-size: 16px;
     font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
