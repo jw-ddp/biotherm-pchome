@@ -102,6 +102,11 @@ a:focus {
     margin: 0;
 }
 
+.section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .text-center {
     text-align: center;
 }
@@ -109,24 +114,20 @@ a:focus {
 /** 標題文字 */
 .title-wrapper {
     position: relative;
-    font-size: 30px;
-    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
-    font-weight: 700;
-    line-height: 36px;
-    color: #000; 
-    text-transform: uppercase; 
     display: table;
     margin: 0 auto;
+    margin-top: 15px;
 }
 
+/*
 .title-wrapper::before {
     position: absolute;
     content: "";
     width: 20px;
     height: 2px;
     background-color: #000;
-    top: 50%;
-    left: -40px;   
+    top: calc(50% - 7px);
+    left: -20px;   
 }
 
 .title-wrapper::after {
@@ -135,45 +136,63 @@ a:focus {
     width: 20px;
     height: 2px;
     background-color: #000;
-    top: 50%;
-    right: -40px;  
-}
+    top: calc(50% - 7px);
+    right: -20px;  
+}*/
 
-@media (min-width: 768px) {
-    .title-wrapper {
-        font-size: 48px;
-        line-height: 48px;
-    }
-}
-
-
-.title-wrapper .head {
-    padding: 0 10px;
+.title-wrapper span {
+    font-size: 30px;
+    font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 700;
+    height: 36px;
+    color: #000; 
+    text-transform: uppercase; 
     display: table;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-    .title-wrapper .head {
+    .title-wrapper span {
         display: inline-block;
+        font-size: 36px;
+        height: 40px;
+    }
+    /*
+    .title-wrapper::before {
+        top: 25%; 
+    }
+
+    .title-wrapper::after {
+        top: 25%;
+    }
+    */
+}
+
+@media (min-width: 992px) {
+    .title-wrapper span {
+        font-size: 48px;
+        height: 52px;
     }
 }
 
 
-
 .sub-head {
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'FuturaStdMedium', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 1px;
+    height: 18px;
     text-align: center;
     text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 30px;
 }
 
 @media (min-width: 768px) {
     .sub-head {
         font-size: 24px;
-        line-height: 48px;
+        height: 48px;
     }
 }
 
@@ -917,9 +936,6 @@ a:focus {
 
 
 /* 滿額好禮專區 */
-
-
-
 #gift .item-wrapper {
     padding: 5px;
 }
@@ -984,12 +1000,17 @@ a:focus {
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #111;
-    margin-bottom: 20px;
 }
 
 @media (min-width: 576px) {
     #gift .item-wrapper .pro-price {
         width: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    #gift .item-wrapper .pro-price {
+        width: 170px;
     }
 }
 
@@ -1022,6 +1043,12 @@ a:focus {
 @media (min-width: 576px) {
     #gift .item-wrapper .pro-price::after {
         width: 120px;
+    }
+}
+
+@media (min-width: 768px) {
+    #gift .item-wrapper .pro-price::after {
+        width: 100px;
     }
 }
 
