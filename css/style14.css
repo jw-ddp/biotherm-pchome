@@ -578,8 +578,6 @@ a:focus {
 
 
 /*-----------------------------------------------------------------------------------*/
-
-
 /*  形象區
 /*-----------------------------------------------------------------------------------*/
 
@@ -719,7 +717,9 @@ a:focus {
 .tv-bn .bn img:nth-child(2) {
     display: none;
 }
-
+.tv-bn .bn img:nth-child(3) {
+    display: none;
+}
 
 
 
@@ -733,8 +733,25 @@ a:focus {
     .tv-bn .bn img:nth-child(2) {
         display: block;
     }
+    .tv-bn .bn img:nth-child(3) {
+        display: none;
+    }
 }
 
+/* 小於 576px  */
+
+@media (max-width: 576px) {
+
+    .tv-bn .bn img:nth-child(1) {
+        display: none;
+    }
+    .tv-bn .bn img:nth-child(2) {
+        display: none;
+    }
+    .tv-bn .bn img:nth-child(3) {
+        display: block;
+    }
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*  產品
