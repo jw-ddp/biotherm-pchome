@@ -865,14 +865,12 @@ a:focus {
 
 @media (min-width: 576px) {
     #brand .wrapper .body {
-        right: 10%;
         width: 80%;
     }
 }
 
 @media (min-width: 992px) {
     #brand .wrapper .body {
-        right: 10%;
         width: 45%;
     }
 }
@@ -900,30 +898,25 @@ a:focus {
     position: absolute;
     content: "";
     top: 53px;
-    right: 45%;
-    width: 10%;
+    width: 16%;
+    left: 42%;
     height: 5px;
     background-color: #df1b1b;
     z-index: 2;
 }
 
+
 #brand .wrapper .body .title h1::after {
     position: absolute;
     content: "";
     top: 55px;
-    right: 0;
-    width: 100%;
+    left: 10%;
+    width: 80%;
     height: 1px;
     background-color: rgba(255,255,255,0.5);
     z-index: 1;
 }
 
-@media (min-width: 576px) {
-    #brand .wrapper .body .title h1::after {
-        right: 15%;
-        width: 70%;
-    }
-}
 
 #brand .wrapper .body .title p {
     font-family: 'FuturaStdLight', 'Noto Sans TC', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
