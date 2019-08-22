@@ -829,7 +829,7 @@ a:focus {
 }
 
 #brand .wrapper {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/07-brand-bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://drive.google.com/uc?export=view&id=1kKoGFcefRqd-eeSBsY7n4Y1YA6AIMS3n');
     background-repeat: no-repeat;
     background-position: 28% 0px; 
     background-size: cover;
@@ -846,7 +846,7 @@ a:focus {
 
 @media (min-width: 992px) {
     #brand .wrapper {
-        background-image: url(../images/07-brand-bg.jpg);
+        background-image: url(https://drive.google.com/uc?export=view&id=1kKoGFcefRqd-eeSBsY7n4Y1YA6AIMS3n);
         background-position: 50% 0px; 
     }
 }
